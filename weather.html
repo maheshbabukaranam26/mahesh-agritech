@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Weather | Mahesh Green Fields</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body id="weatherPage">
+
+    <!-- =========================
+         HEADER
+    ========================== -->
+
+    <header class="header">
+
+        <a href="index.html" class="logo">
+            🌾 Mahesh Green Fields
+        </a>
+
+        <nav class="navbar">
+
+            <a href="index.html">Home</a>
+
+            <a href="crops.html">Crops</a>
+
+            <a href="weather.html" class="active">
+                Weather
+            </a>
+
+            <a href="market.html">
+                Market
+            </a>
+
+            <a href="pests.html">
+                Pests
+            </a>
+
+            <a href="tips.html">
+                Tips
+            </a>
+
+            <a href="contact.html">
+                Contact
+            </a>
+
+            <a href="registration.html"
+               class="nav-register">
+                Register
+            </a>
+
+        </nav>
+
+        <button class="menu-btn" id="menuBtn">
+            ☰
+        </button>
+
+    </header>
+
+
+    <!-- =========================
+         WEATHER HERO
+    ========================== -->
+
+    <section class="page-hero">
+
+        <p class="page-hero-small">
+            FARM WEATHER
+        </p>
+
+        <h1>
+            🌦️ Weather Information
+        </h1>
+
+        <h2>
+            Plan your farming activities according to weather
+        </h2>
+
+    </section>
+
+
+    <!-- =========================
+         WEATHER MAIN SECTION
+    ========================== -->
+
+    <section class="weather-page-section sunny">
+
+        <!-- Background Decorations -->
+
+        <div class="weather-background">
+
+            <div class="weather-sun">
+                ☀️
+            </div>
+
+            <div class="weather-cloud cloud-one">
+                ☁️
+            </div>
+
+            <div class="weather-cloud cloud-two">
+                ☁️
+            </div>
+
+            <div class="weather-rain">
+                🌧️
+            </div>
+
+        </div>
+
+
+        <div class="content-container weather-content">
+
+
+            <!-- SECTION TITLE -->
+
+            <div class="section-heading">
+
+                <p>
+                    LIVE WEATHER
+                </p>
+
+                <h2>
+                    Check Your Local Weather
+                </h2>
+
+                <p class="weather-subtitle">
+                    Enter your village, town or city
+                    to check weather conditions.
+                </p>
+
+            </div>
+
+
+            <!-- SEARCH -->
+
+            <div class="weather-search-box">
+
+                <form id="weatherForm">
+
+                    <input
+                        type="text"
+                        id="cityInput"
+                        placeholder="Enter village or city name"
+                        autocomplete="off"
+                        required
+                    >
+
+                    <button type="submit">
+                        🔍 Check Weather
+                    </button>
+
+                </form>
+
+            </div>
+
+
+            <!-- WEATHER RESULT -->
+
+            <div class="weather-main-card">
+
+
+                <!-- LOCATION -->
+
+                <div class="weather-location">
+
+                    <span>
+                        📍
+                    </span>
+
+                    <div>
+
+                        <h2 id="cityName">
+                            Your Location
+                        </h2>
+
+                        <p id="weatherDate">
+                            Today's Weather
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- MAIN CONDITION -->
+
+                <div class="weather-condition">
+
+                    <div
+                        class="main-weather-icon"
+                        id="mainWeatherIcon">
+
+                        ☀️
+
+                    </div>
+
+                    <div>
+
+                        <div
+                            class="main-temperature"
+                            id="temperature">
+
+                            28°C
+
+                        </div>
+
+                        <div
+                            class="weather-status"
+                            id="weatherStatus">
+
+                            Sunny
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- WEATHER DETAILS -->
+
+                <div class="weather-result">
+
+
+                    <!-- TEMPERATURE -->
+
+                    <div class="weather-item">
+
+                        <div class="weather-icon">
+                            🌡️
+                        </div>
+
+                        <h4>
+                            Temperature
+                        </h4>
+
+                        <p id="temperatureSmall">
+                            28°C
+                        </p>
+
+                    </div>
+
+
+                    <!-- HUMIDITY -->
+
+                    <div class="weather-item">
+
+                        <div class="weather-icon">
+                            💧
+                        </div>
+
+                        <h4>
+                            Humidity
+                        </h4>
+
+                        <p id="humidity">
+                            72%
+                        </p>
+
+                    </div>
+
+
+                    <!-- WIND -->
+
+                    <div class="weather-item">
+
+                        <div class="weather-icon">
+                            💨
+                        </div>
+
+                        <h4>
+                            Wind Speed
+                        </h4>
+
+                        <p id="windSpeed">
+                            12 km/h
+                        </p>
+
+                    </div>
+
+
+                    <!-- RAIN -->
+
+                    <div class="weather-item">
+
+                        <div class="weather-icon">
+                            🌧️
+                        </div>
+
+                        <h4>
+                            Rain Chance
+                        </h4>
+
+                        <p id="rainChance">
+                            20%
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- WEATHER MESSAGE -->
+
+                <div
+                    class="weather-message"
+                    id="weatherMessage">
+
+                    ☀️ Good conditions for outdoor
+                    farming activities.
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         FARMING WEATHER TIPS
+    ========================== -->
+
+    <section class="section services-section">
+
+        <div class="section-heading">
+
+            <p>
+                WEATHER BASED FARMING
+            </p>
+
+            <h2>
+                Farming Weather Tips
+            </h2>
+
+        </div>
+
+
+        <div class="info-grid">
+
+
+            <div class="info-card">
+
+                <div class="icon">
+                    🌧️
+                </div>
+
+                <h3>
+                    Before Rainfall
+                </h3>
+
+                <p>
+                    Check field drainage and avoid
+                    unnecessary irrigation when rain
+                    is expected.
+                </p>
+
+            </div>
+
+
+            <div class="info-card">
+
+                <div class="icon">
+                    ☀️
+                </div>
+
+                <h3>
+                    Hot Weather
+                </h3>
+
+                <p>
+                    Monitor soil moisture and provide
+                    irrigation according to crop
+                    requirements.
+                </p>
+
+            </div>
+
+
+            <div class="info-card">
+
+                <div class="icon">
+                    💨
+                </div>
+
+                <h3>
+                    Strong Winds
+                </h3>
+
+                <p>
+                    Protect young plants and inspect
+                    fields after strong winds.
+                </p>
+
+            </div>
+
+
+            <div class="info-card">
+
+                <div class="icon">
+                    💧
+                </div>
+
+                <h3>
+                    High Humidity
+                </h3>
+
+                <p>
+                    High humidity can increase the risk
+                    of some fungal diseases. Monitor
+                    crops carefully.
+                </p>
+
+            </div>
+
+
+            <div class="info-card">
+
+                <div class="icon">
+                    🌱
+                </div>
+
+                <h3>
+                    Crop Planning
+                </h3>
+
+                <p>
+                    Consider weather conditions while
+                    planning sowing, irrigation,
+                    spraying and harvesting.
+                </p>
+
+            </div>
+
+
+            <div class="info-card">
+
+                <div class="icon">
+                    👨‍🌾
+                </div>
+
+                <h3>
+                    Farmer Alert
+                </h3>
+
+                <p>
+                    Always verify local weather information
+                    before taking important farming decisions.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         CTA
+    ========================== -->
+
+    <section class="cta-section">
+
+        <div>
+
+            <p class="cta-small">
+                SMART AGRICULTURE
+            </p>
+
+            <h2>
+                Weather Smart Farming
+            </h2>
+
+            <p>
+                Better weather awareness can help farmers
+                plan important field activities.
+            </p>
+
+            <a href="tips.html"
+               class="btn btn-primary">
+
+                View Farming Tips
+
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer class="footer">
+
+        <div class="footer-content">
+
+            <div>
+
+                <h2>
+                    🌾 Mahesh Green Fields
+                </h2>
+
+                <p>
+                    Growing Farmers, Growing the Future
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="crops.html">
+                    Crops
+                </a>
+
+                <a href="weather.html">
+                    Weather
+                </a>
+
+                <a href="market.html">
+                    Market
+                </a>
+
+                <a href="contact.html">
+                    Contact
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="copyright">
+
+            © 2026 Mahesh Green Fields.
+            All Rights Reserved.
+
+        </div>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

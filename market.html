@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Market Prices | Mahesh Green Fields</title>
+
+    <link rel="stylesheet"
+          href="css/style.css">
+
+</head>
+
+<body>
+
+
+    <!-- =========================
+         HEADER
+    ========================== -->
+
+    <header class="header">
+
+        <a href="index.html"
+           class="logo">
+
+            🌾 Mahesh Green Fields
+
+        </a>
+
+
+        <nav class="navbar">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="crops.html">
+                Crops
+            </a>
+
+            <a href="weather.html">
+                Weather
+            </a>
+
+            <a href="market.html"
+               class="active">
+                Market
+            </a>
+
+            <a href="pests.html">
+                Pests
+            </a>
+
+            <a href="tips.html">
+                Tips
+            </a>
+
+            <a href="contact.html">
+                Contact
+            </a>
+
+            <a href="registration.html"
+               class="nav-register">
+                Register
+            </a>
+
+        </nav>
+
+
+        <button class="menu-btn"
+                id="menuBtn">
+
+            ☰
+
+        </button>
+
+    </header>
+
+
+
+    <!-- =========================
+         PAGE HERO
+    ========================== -->
+
+    <section class="page-hero">
+
+        <p class="page-hero-small">
+            AGRICULTURAL MARKET
+        </p>
+
+        <h1>
+            💰 Market Prices
+        </h1>
+
+        <h2>
+            Check crop prices and understand market trends
+        </h2>
+
+    </section>
+
+
+
+    <!-- =========================
+         MARKET SECTION
+    ========================== -->
+
+    <section class="market-section">
+
+        <div class="content-container">
+
+
+            <!-- TITLE -->
+
+            <div class="section-heading">
+
+                <p>
+                    TODAY'S MARKET
+                </p>
+
+                <h2>
+                    Agricultural Crop Prices
+                </h2>
+
+                <p class="market-subtitle">
+                    Sample market information for farmers.
+                    Always verify the latest local mandi price
+                    before selling your produce.
+                </p>
+
+            </div>
+
+
+
+            <!-- SEARCH -->
+
+            <div class="market-search">
+
+                <input
+                    type="text"
+                    id="cropSearch"
+                    placeholder="🔍 Search crop name...">
+
+            </div>
+
+
+
+            <!-- MARKET TABLE -->
+
+            <div class="market-table-wrapper">
+
+                <table class="market-table">
+
+                    <thead>
+
+                        <tr>
+
+                            <th>
+                                Crop
+                            </th>
+
+                            <th>
+                                Market
+                            </th>
+
+                            <th>
+                                Min Price
+                            </th>
+
+                            <th>
+                                Max Price
+                            </th>
+
+                            <th>
+                                Average
+                            </th>
+
+                            <th>
+                                Trend
+                            </th>
+
+                        </tr>
+
+                    </thead>
+
+
+                    <tbody id="marketTableBody">
+
+
+                        <!-- PADDY -->
+
+                        <tr>
+
+                            <td class="crop-name">
+                                🌾 Paddy
+                            </td>
+
+                            <td>
+                                Local Mandi
+                            </td>
+
+                            <td>
+                                ₹2,100
+                            </td>
+
+                            <td>
+                                ₹2,450
+                            </td>
+
+                            <td class="average-price">
+                                ₹2,275
+                            </td>
+
+                            <td>
+                                <span class="price-up">
+                                    ↑ 3.2%
+                                </span>
+                            </td>
+
+                        </tr>
+
+
+
+                        <!-- MAIZE -->
+
+                        <tr>
+
+                            <td class="crop-name">
+                                🌽 Maize
+                            </td>
+
+                            <td>
+                                Local Mandi
+                            </td>
+
+                            <td>
+                                ₹1,900
+                            </td>
+
+                            <td>
+                                ₹2,250
+                            </td>
+
+                            <td class="average-price">
+                                ₹2,075
+                            </td>
+
+                            <td>
+                                <span class="price-up">
+                                    ↑ 2.1%
+                                </span>
+                            </td>
+
+                        </tr>
+
+
+
+                        <!-- COTTON -->
+
+                        <tr>
+
+                            <td class="crop-name">
+                                ☁️ Cotton
+                            </td>
+
+                            <td>
+                                Local Mandi
+                            </td>
+
+                            <td>
+                                ₹6,500
+                            </td>
+
+                            <td>
+                                ₹7,200
+                            </td>
+
+                            <td class="average-price">
+                                ₹6,850
+                            </td>
+
+                            <td>
+                                <span class="price-down">
+                                    ↓ 1.4%
+                                </span>
+                            </td>
+
+                        </tr>
+
+
+
+                        <!-- CHILLI -->
+
+                        <tr>
+
+                            <td class="crop-name">
+                                🌶️ Chilli
+                            </td>
+
+                            <td>
+                                Local Mandi
+                            </td>
+
+                            <td>
+                                ₹12,000
+                            </td>
+
+                            <td>
+                                ₹16,000
+                            </td>
+
+                            <td class="average-price">
+                                ₹14,000
+                            </td>
+
+                            <td>
+                                <span class="price-up">
+                                    ↑ 4.8%
+                                </span>
+                            </td>
+
+                        </tr>
+
+
+
+                        <!-- GROUNDNUT -->
+
+                        <tr>
+
+                            <td class="crop-name">
+                                🥜 Groundnut
+                            </td>
+
+                            <td>
+                                Local Mandi
+                            </td>
+
+                            <td>
+                                ₹5,200
+                            </td>
+
+                            <td>
+                                ₹6,000
+                            </td>
+
+                            <td class="average-price">
+                                ₹5,600
+                            </td>
+
+                            <td>
+                                <span class="price-up">
+                                    ↑ 1.7%
+                                </span>
+                            </td>
+
+                        </tr>
+
+
+
+                        <!-- TURMERIC -->
+
+                        <tr>
+
+                            <td class="crop-name">
+                                🟠 Turmeric
+                            </td>
+
+                            <td>
+                                Local Mandi
+                            </td>
+
+                            <td>
+                                ₹10,000
+                            </td>
+
+                            <td>
+                                ₹13,500
+                            </td>
+
+                            <td class="average-price">
+                                ₹11,750
+                            </td>
+
+                            <td>
+                                <span class="price-down">
+                                    ↓ 2.3%
+                                </span>
+                            </td>
+
+                        </tr>
+
+
+
+                        <!-- RED GRAM -->
+
+                        <tr>
+
+                            <td class="crop-name">
+                                🌿 Red Gram
+                            </td>
+
+                            <td>
+                                Local Mandi
+                            </td>
+
+                            <td>
+                                ₹6,800
+                            </td>
+
+                            <td>
+                                ₹7,600
+                            </td>
+
+                            <td class="average-price">
+                                ₹7,200
+                            </td>
+
+                            <td>
+                                <span class="price-up">
+                                    ↑ 2.9%
+                                </span>
+                            </td>
+
+                        </tr>
+
+
+
+                        <!-- SUGARCANE -->
+
+                        <tr>
+
+                            <td class="crop-name">
+                                🎋 Sugarcane
+                            </td>
+
+                            <td>
+                                Local Market
+                            </td>
+
+                            <td>
+                                ₹3,000
+                            </td>
+
+                            <td>
+                                ₹3,400
+                            </td>
+
+                            <td class="average-price">
+                                ₹3,200
+                            </td>
+
+                            <td>
+                                <span class="price-up">
+                                    ↑ 1.2%
+                                </span>
+                            </td>
+
+                        </tr>
+
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+
+            <!-- NO RESULT -->
+
+            <div id="noCropResult"
+                 class="no-result">
+
+                ❌ No crop found.
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         MARKET INFORMATION CARDS
+    ========================== -->
+
+    <section class="section">
+
+        <div class="section-heading">
+
+            <p>
+                SMART SELLING
+            </p>
+
+            <h2>
+                Tips Before Selling Your Crop
+            </h2>
+
+        </div>
+
+
+
+        <div class="info-grid">
+
+
+            <div class="info-card">
+
+                <div class="icon">
+                    📊
+                </div>
+
+                <h3>
+                    Compare Prices
+                </h3>
+
+                <p>
+                    Compare prices from different markets
+                    before deciding where to sell.
+                </p>
+
+            </div>
+
+
+
+            <div class="info-card">
+
+                <div class="icon">
+                    🌾
+                </div>
+
+                <h3>
+                    Check Quality
+                </h3>
+
+                <p>
+                    Crop quality, moisture and grading can
+                    affect the price received by farmers.
+                </p>
+
+            </div>
+
+
+
+            <div class="info-card">
+
+                <div class="icon">
+                    📅
+                </div>
+
+                <h3>
+                    Watch Market Trends
+                </h3>
+
+                <p>
+                    Observe price trends and seasonal
+                    demand before making selling decisions.
+                </p>
+
+            </div>
+
+
+
+            <div class="info-card">
+
+                <div class="icon">
+                    🤝
+                </div>
+
+                <h3>
+                    Negotiate Carefully
+                </h3>
+
+                <p>
+                    Understand the current market value
+                    before negotiating with buyers.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         CTA
+    ========================== -->
+
+    <section class="cta-section">
+
+        <div>
+
+            <p class="cta-small">
+                FARMER INFORMATION
+            </p>
+
+            <h2>
+                Know Your Market Before You Sell
+            </h2>
+
+            <p>
+                Better market information can help farmers
+                make more informed selling decisions.
+            </p>
+
+            <a href="tips.html"
+               class="btn btn-primary">
+
+                Farming Tips
+
+            </a>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer class="footer">
+
+        <div class="footer-content">
+
+            <div>
+
+                <h2>
+                    🌾 Mahesh Green Fields
+                </h2>
+
+                <p>
+                    Growing Farmers, Growing the Future
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="crops.html">
+                    Crops
+                </a>
+
+                <a href="weather.html">
+                    Weather
+                </a>
+
+                <a href="market.html">
+                    Market
+                </a>
+
+                <a href="contact.html">
+                    Contact
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="copyright">
+
+            © 2026 Mahesh Green Fields.
+            All Rights Reserved.
+
+        </div>
+
+    </footer>
+
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
